@@ -25,7 +25,7 @@ public class View {
     }
 
     public String askName(int player) {
-        Util.fastType("Please enter the name of the player " + player);
+        Util.fastType("Please enter the name of the player " + (player + 1));
         System.out.print("\n>");
         String name = kb.nextLine();
         while (name.length() > 7) {
@@ -160,7 +160,7 @@ public class View {
         } else {
             display += "\n";
         }
-        display += ("                                      " + this.game.getPlayerName(1));
+        display += ("                                     " + this.game.getPlayerName(1));
         System.out.println(display);
         Util.sleep(0.42);
     }

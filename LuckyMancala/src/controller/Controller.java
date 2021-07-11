@@ -1,5 +1,6 @@
 package LuckyMancala.src.controller;
 
+import LuckyMancala.src.Util;
 import LuckyMancala.src.model.*;
 import LuckyMancala.src.view.*;
 
@@ -13,6 +14,7 @@ public class Controller {
     }
 
     public void play() {
+        Util.clear();
         this.view.displayWelcome();
         this.game.setPlayerName(0, this.view.askName(0));
         this.game.setPlayerName(1, this.view.askName(1));

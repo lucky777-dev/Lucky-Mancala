@@ -1,12 +1,10 @@
 package LuckyMancala.src.model;
 
-import LuckyMancala.src.Util;
-
 /**
  * The Game class for Lucky-Mancala.
  */
 public class Game {
-    private String version = "v0.1";
+    private String version = "v1.0";
     private String[] playersName;
     private int currentPlayer;
     private int pickedBeans;
